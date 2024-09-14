@@ -4,7 +4,7 @@ import java.util.List;
 public class Zoo {
     private String nom;
     private String ciutat;
-    private List<Animal> animals; //agregation
+    private List<Animal> animals; //aggregation
     public Zoo(String nom, String ciutat){  //constructor de Zoo
         this.nom = nom;
         this.ciutat = ciutat;
@@ -19,7 +19,7 @@ public class Zoo {
         }
     }
     public void displayData(){
-        System.out.println("Nom del Zoo: " + this.nom + ". Ciutat: " + this.ciutat );
+        System.out.println("Nom del Zoo: " + this.nom + ". Ciutat: " + this.ciutat + ". Animals del Zoo:");
         for(int i = 0; i < this.animals.size(); i++){
             this.animals.get(i).displayData();
         }

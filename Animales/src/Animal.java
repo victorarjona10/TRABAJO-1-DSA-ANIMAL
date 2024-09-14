@@ -1,6 +1,4 @@
 public abstract class Animal {
-
-
     protected int edad;
     protected String pais;
     protected String sonido;
@@ -12,37 +10,9 @@ public abstract class Animal {
         this.sonido = sonido;
         this.edad=edad;
         this.nombre=nombre;
-
     }
 
+    public abstract void dormir(); //polimorfismo
 
-    public String getSonido() {
-        return sonido;
-    }
-
-    public void setSonido(String sonido) {
-        this.sonido = sonido;
-    }
-
-    public int getEdad() {
-        return edad;
-    }
-
-    public void setEdad(int edad) {
-        this.edad = edad;
-    }
-
-    public String getPais() {
-        return pais;
-    }
-
-    public void setPais(String pais) {
-        this.pais = pais;
-    }
-
-
-
-    public abstract void dormir();
-
-    public abstract void displayData();
+    public abstract void displayData(); //polimorfismo
 }
